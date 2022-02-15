@@ -18,7 +18,7 @@ ENV RUSTUP_HOME=/usr/local/rustup \
 RUN  curl -L "https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init" \
   -o rustup-init; \
   chmod +x rustup-init; \
-  ./rustup-init -y --no-modify-path --profile minimal --default-toolchain nightly-2021-06-29; \
+  ./rustup-init -y --no-modify-path --profile minimal --default-toolchain nightly-2022-01-19; \
   rm rustup-init; \
   chmod -R a+w ${RUSTUP_HOME} ${CARGO_HOME}; \
   rustup show; \
